@@ -1,0 +1,29 @@
+.modal {
+  align-items: center;
+  background: rgba(32, 35, 41, .95);
+  bottom: 0px;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.modal-container {
+  align-items: center;
+  background-color: var(--very-dark-grayish-blue-hover);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 150px;
+  width: 80%;
+}
+
+.modal-container__header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em auto;
+  width: 90%;
+}

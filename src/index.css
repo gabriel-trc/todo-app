@@ -1,0 +1,165 @@
+:root {
+  --withe: #FFFFFF;
+  --black: #000000;
+
+  --font-size: 10px;
+  --font-family: 'Josefin Sans', sans-serif;
+  --font-weight-medium: 400;
+  --font-weight-bold: 700;
+  --grid-row-height: 5.2rem;
+  --primary-bright-blue: hsl(220, 98%, 61%);
+  --img-todo-item-delete: url("../public/images/icon-cross.svg");
+  --img-todo-item-complete: url("../public/images/icon-check.svg");
+
+
+
+  /* LIGHT THEME */
+  --image-background-desktop-light: url("../public/images/bg-desktop-light.jpg");
+  --image-background-mobile-light: url("../public/images/bg-mobile-light.jpg");
+  --image-switch-theme-button-light: url("../public/images/icon-moon.svg");
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+  /* DARK THEME */
+  --image-background-desktop-dark: url("../public/images/bg-desktop-dark.jpg");
+  --image-background-mobile-dark: url("../public/images/bg-mobile-dark.jpg");
+  --image-switch-theme-button-dark: url("../public/images/icon-sun.svg");
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-hover: hsl(237, 14%, 26%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-bold);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+input::placeholder {
+  /* color: var(--very-dark-blue); */
+  /* color: var(--very-dark-desaturated-blue); */
+  /* color: var(--light-grayish-blue); */
+  /* color: var(--light-grayish-blue-hover); */
+  
+  /* color: var(--dark-grayish-blue); */
+  
+  /* color: var(--very-dark-grayish-blue); */
+  /* color: var(--very-dark-grayish-blue-hover); */
+  font-weight: var(--font-weight-bold);
+}
+
+.grid-row {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 5rem auto 5rem;
+  height: var(--grid-row-height);
+}
+
+.grid-row__border {
+  border-radius: 4px;
+}
+
+.grid-row--dark {
+  /* background-color: var(--very-dark-blue); */
+  background-color: var(--very-dark-desaturated-blue);
+  /* background-color: var(--light-grayish-blue); */
+  /* background-color: var(--light-grayish-blue-hover); */
+  /* background-color: var(--dark-grayish-blue); */
+  /* background-color: var(--very-dark-grayish-blue); */
+  /* background-color: var(--very-dark-grayish-blue-hover); */
+}
+
+.check-circle {
+  border-radius: 50%;
+  height: 1.8rem;
+  margin: auto;
+  width: 1.8rem;
+}
+
+.check-circle:hover {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.check-circle:hover::after {
+  background-color: initial;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.check-circle--dark:hover::after {
+  background-color: var(--very-dark-desaturated-blue);
+}
+
+
+.check-circle--light {
+  border: 2px solid;
+  /* border-color: var(--very-light-gray); */
+  /* border-color: var(--very-light-grayish-blue); */
+  border-color: var(--light-grayish-blue);
+  /* border-color: var(--dark-grayish-blue);
+  border-color: var(--very-dark-grayish-blue); */
+}
+
+.check-circle--dark {
+  border: 1.6px solid;
+  border-color: var(--very-dark-blue);
+  border-color: var(--very-dark-desaturated-blue);
+  border-color: var(--light-grayish-blue);
+  border-color: var(--light-grayish-blue-hover);
+  border-color: var(--dark-grayish-blue);
+  border-color: var(--very-dark-grayish-blue);
+  border-color: var(--very-dark-grayish-blue-hover);
+}
+
+.check-circle--completed {
+  background-image: var(--img-todo-item-complete), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-color: var(--image-switch-theme-button-light);
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 375px) {
+
+  /* :root {
+    --font-size: 12px;
+  } */
+
+}

@@ -1,0 +1,23 @@
+.search-todo-section{
+    margin-bottom: 1.6rem;
+}
+
+.search-todo-section__input {
+    background-color: initial;
+    border: none;
+    font-size: 1.2rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: var(--very-dark-blue);
+    color: var(--very-dark-desaturated-blue);
+    color: var(--light-grayish-blue);
+
+    /* color: var(--light-grayish-blue-hover); */
+    /* color: var(--dark-grayish-blue); */
+    /* color: var(--very-dark-grayish-blue); */
+    /* color: var(--very-dark-grayish-blue-hover); */
+}
+
+form span{
+    pointer-events: none;
+}

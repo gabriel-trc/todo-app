@@ -1,0 +1,43 @@
+.header{
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto max-content;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.header__title{
+    color: white;
+    letter-spacing: 1rem;
+    font-size: 2.6rem;
+}
+
+.header__button{
+    background-color: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    height: 2rem;
+    width: 2rem;
+}
+
+.header__button--light{
+    background-image: var(--image-switch-theme-button-light); 
+}
+
+.header__button--dark{
+    background-image: var(--image-switch-theme-button-dark); 
+}
+
+@media only screen and (max-width: 375px){
+    
+    .todo-container--light{
+        background-image: var(--image-background-mobile-light);
+    }
+    
+    .todo-container--dark{
+        background-image: var(--image-background-mobile-dark);
+    }
+
+}
