@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 
 import { TodoContext } from '../../contexts';
 import { TodoContainer } from '../TodoContainer';
@@ -21,7 +21,7 @@ function App() {
   } = useContext(TodoContext);
   // const incompleteTodos = filteredTodos.filter(e => !e.completed).length
   return (
-    <React.Fragment>
+    <>
       <TodoContainer>
         <TodoHeader />
         <TodoSearch />
@@ -37,7 +37,7 @@ function App() {
         <TodoFooter />
       </TodoContainer>
       {isModalOpen && <TodoCreateForm />}
-    </React.Fragment>
+    </>
   );
 }
 

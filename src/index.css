@@ -50,7 +50,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+body {
+  background-color: hsl(235, 21%, 11%, .95);
+}
 
 li {
   list-style: none;
@@ -66,9 +68,9 @@ input::placeholder {
   /* color: var(--very-dark-desaturated-blue); */
   /* color: var(--light-grayish-blue); */
   /* color: var(--light-grayish-blue-hover); */
-  
+
   /* color: var(--dark-grayish-blue); */
-  
+
   /* color: var(--very-dark-grayish-blue); */
   /* color: var(--very-dark-grayish-blue-hover); */
   font-weight: var(--font-weight-bold);
@@ -154,12 +156,4 @@ input::placeholder {
   width: 1.6rem;
   height: 1.6rem;
   margin: auto;
-}
-
-@media only screen and (max-width: 375px) {
-
-  /* :root {
-    --font-size: 12px;
-  } */
-
 }

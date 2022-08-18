@@ -42,7 +42,7 @@
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 2375px) {
 
     .todo-footer {
         height: initial;
