@@ -1,9 +1,6 @@
-import React, { useContext } from 'react';
 import './TodoSearch.css';
-import { TodoContext } from '../../contexts';
 
-function TodoSearch() {
-    const { toSearchValue, setToSearchValue } = useContext(TodoContext)
+function TodoSearch({ toSearchValue, setToSearchValue }) {
     const handleChange = function (event) {
         event.preventDefault();
         const text = event.target.value.trim()

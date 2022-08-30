@@ -1,11 +1,8 @@
-import React, { useContext } from 'react';
 import { createPortal } from 'react-dom';
-import { TodoContext } from '../../contexts';
-
 import './Modal.css';
 
-function Modal({ children, title }) {
-    const { setIsModalOpen, } = useContext(TodoContext)
+function Modal({ children, title, setIsModalOpen }) {
+
     const onClickCloseModal = () => {
         setIsModalOpen(prevState => !prevState)
     }

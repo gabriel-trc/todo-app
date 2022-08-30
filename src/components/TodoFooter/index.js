@@ -1,5 +1,3 @@
-import React, { useContext } from 'react';
-import { TodoContext } from '../../contexts';
 import './TodoFooter.css';
 
 const TODOS_FILTER_STATUS = {
@@ -8,13 +6,8 @@ const TODOS_FILTER_STATUS = {
     COMPLETED: 'completed',
 }
 
-function TodoFooter() {
-    const {
-        clearCompletedTodos,
-        filterStatus,
-        setIsModalOpen,
-        setFilterStatus
-    } = useContext(TodoContext)
+function TodoFooter({ filterStatus, setIsModalOpen, setFilterStatus }) {
+
     const onChangeFilterTodosByStatus = (args) => {
         const id = args.target.id
         const status = id.replace('filter_', '')
