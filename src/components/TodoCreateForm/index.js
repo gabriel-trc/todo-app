@@ -4,13 +4,14 @@ import { Modal } from '../Modal';
 import { TodoContext } from '../../contexts';
 
 function TodoCreateForm() {
-    const { createTodo } = useContext(TodoContext)
+    const { createTodo, setIsModalOpen } = useContext(TodoContext)
     const handleSubmit = function (event) {
         event.preventDefault();
         const inputTodoText = event.target.querySelector('input')
         const text = inputTodoText.value.trim()
         createTodo({ text })
         inputTodoText.value = ''
+        setIsModalOpen(prevState => !prevState)
     }
     
     return (

@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 150px;
-  width: 80%;
+  width: 325px;
 }
 
 .modal-container__header {
@@ -26,4 +26,12 @@
   justify-content: space-between;
   margin: 1em auto;
   width: 90%;
+}
+
+.modal-container__header button {
+  background-color: inherit;
+  border: 0;
+  border-radius: inherit;
+  color: inherit;
+  cursor: pointer;
 }

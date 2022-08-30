@@ -1,7 +1,7 @@
 .todo-footer {
     border-radius: 0 0 4px 4px;
     display: grid;
-    font-size: .8rem;
+    /* font-size: .8rem; */
     grid-template-columns: 25% 50% 25%;
     height: 3rem;
     place-items: center;
@@ -91,6 +91,7 @@
 
     .todo-footer__create-todo {
         align-items: center;
+        background-color: var(--withe);
         border-radius: 4px;
         display: flex;
         grid-column-start: 1;
@@ -101,6 +102,30 @@
         justify-content: center;
         width: 100%;
     }
+
+    .todo-footer__create-todo button {
+        background-color: inherit;
+        border: 0;
+        color: inherit;
+        cursor: pointer;
+        font-size: 18px;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* .todo-footer__create-todo button:focus {
+        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    }
+
+    .todo-footer__create-todo button:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        transform: translateX(-2px);
+    }
+
+    .todo-footer__create-todo button:active {
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        transform: translateX(2px);
+    } */
 }
 
 /* 
